@@ -1,0 +1,79 @@
+.calculator {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e1f5fe;
+  background-image: linear-gradient(to bottom, #76ff03, #64dd17);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 28px;
+  border: none;
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #212121;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 5px;
+  background-color: #64dd17;
+  background-image: linear-gradient(to bottom, #76ff03, #64dd17);
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #52b202;
+}
+
+button:active {
+  background-color: #3d8e00;
+}
+
+button.operator {
+  background-color: #f4511e;
+  background-image: linear-gradient(to bottom, #f4511e, #e64a19);
+}
+
+button.operator:hover {
+  background-color: #e64a19;
+}
+
+button.operator:active {
+  background-color: #bf360c;
+}
+
+button.clear {
+  background-color: #757575;
+  background-image: linear-gradient(to bottom, #757575, #616161);
+}
+
+button.clear:hover {
+  background-color: #616161;
+}
+
+button.clear:active {
+  background-color: #424242;
+}
